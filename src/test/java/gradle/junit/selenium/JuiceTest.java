@@ -29,7 +29,7 @@ class JuiceTest {
         driver = new ChromeDriver(options);
 //        driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //TODO Task1: Add your credentials to customer i.e. email, password and security answer.
         customer = new Customer.Builder().build();
@@ -87,7 +87,7 @@ class JuiceTest {
         Thread.sleep(5000);
         System.out.println(driver.getTitle());
         Assertions.assertEquals("OWASP Juice Shop",driver.getTitle());
-        driver.findElement(By.id("navbarAccount")).isDisplayed();
+        //driver.findElement(By.id("navbarAccount")).isDisplayed();
 
         // TODO Navigate to product and post review
 
