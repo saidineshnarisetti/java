@@ -77,9 +77,13 @@ class JuiceTest {
 
         // TODO Dismiss popup (click close)
         //driver.findElement(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")).click();
-        new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")))
-                .click();
+        try {
+            WebElement closeButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                    .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")));
+            closeButton.click();
+        } catch (org.openqa.selenium.TimeoutException e) {
+            System.out.println("Welcome banner not found, continuing...");
+        }
 
         // Login with credentials
         WebElement emailField = driver.findElement(By.name("email"));
