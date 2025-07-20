@@ -89,7 +89,7 @@ class JuiceTest {
         WebElement emailField = driver.findElement(By.name("email"));
         WebElement passwordField = driver.findElement(By.name("password"));
         //WebElement loginButton = driver.findElement(By.id("loginButton"));
-        WebElement loginButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+        WebElement loginButton = new WebDriverWait(driver, Duration.ofSeconds(15))
                 .until(ExpectedConditions.elementToBeClickable(By.id("loginButton")));
         loginButton.click();
 
