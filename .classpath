@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.properties"/>
+	<classpathentry kind="lib" path="build.gradle"/>
+	<classpathentry kind="lib" path="/Users/saidinesh/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar" sourcepath="/Users/saidinesh/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="dev.failsafe"/>
+			<attribute name="maven.artifactId" value="failsafe"/>
+			<attribute name="maven.version" value="3.2.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/saidinesh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar" sourcepath="/Users/saidinesh/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
+			<attribute name="maven.artifactId" value="webdrivermanager"/>
+			<attribute name="maven.version" value="5.0.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar" sourcepath="/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-api"/>
+			<attribute name="maven.version" value="3.141.59"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar" sourcepath="/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-chrome-driver"/>
+			<attribute name="maven.version" value="3.141.59"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/saidinesh/Downloads/rest-assured-5.5.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/saidinesh/Downloads/hamcrest-3.0-javadoc.jar"/>
+	<classpathentry kind="output" path="build/classes/java/test"/>
+</classpath>
