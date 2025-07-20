@@ -43,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: junit-html-report
-          path: gradle-junit-selenium/build/reports/tests/test
+          path: java/build/reports/tests/test

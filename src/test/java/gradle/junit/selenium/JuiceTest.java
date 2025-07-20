@@ -71,28 +71,28 @@ class JuiceTest {
     }
 
     //TODO Task2: Login and post a product review using Selenium
-   // @Test
+//    @Test
 //    void loginAndPostProductReviewViaUi() throws InterruptedException {
 //        driver.get(baseUrl + "/#/login");
 //
 //        // TODO Dismiss popup (click close)
-//        //driver.findElement(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")).click();
-//        try {
-//            WebElement closeButton = new WebDriverWait(driver, Duration.ofSeconds(10))
-//                    .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")));
-//            closeButton.click();
-//        } catch (org.openqa.selenium.TimeoutException e) {
-//            System.out.println("Welcome banner not found, continuing...");
-//        }
+//        driver.findElement(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")).click();
+////        try {
+////            WebElement closeButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+////                    .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")));
+////            closeButton.click();
+////        } catch (org.openqa.selenium.TimeoutException e) {
+////            System.out.println("Welcome banner not found, continuing...");
+////        }
 //
 //        // Login with credentials
 //        WebElement emailField = driver.findElement(By.name("email"));
 //        WebElement passwordField = driver.findElement(By.name("password"));
-//        //WebElement loginButton = driver.findElement(By.id("loginButton"));
-//        System.out.println("Current URL: " + driver.getCurrentUrl());
-//        WebElement loginButton = new WebDriverWait(driver, Duration.ofSeconds(25))
-//                .until(ExpectedConditions.elementToBeClickable(By.id("loginButton")));
-//        loginButton.click();
+//        WebElement loginButton = driver.findElement(By.id("loginButton"));
+////        System.out.println("Current URL: " + driver.getCurrentUrl());
+////        WebElement loginButton = new WebDriverWait(driver, Duration.ofSeconds(25))
+////                .until(ExpectedConditions.elementToBeClickable(By.id("loginButton")));
+////        loginButton.click();
 //
 //        emailField.sendKeys(customer.getEmail());
 //        passwordField.sendKeys(customer.getPassword());
