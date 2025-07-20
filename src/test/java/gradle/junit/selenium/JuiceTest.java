@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 class JuiceTest {
     private static String address = "localhost";
@@ -22,7 +23,11 @@ class JuiceTest {
 
     @BeforeAll
     static void setup() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new"); // For Chrome 109+
+        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+        driver = new ChromeDriver(options);
+//        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
