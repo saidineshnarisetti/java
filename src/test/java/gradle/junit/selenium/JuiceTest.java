@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 class JuiceTest {
     private static String address = "localhost";
@@ -74,7 +76,10 @@ class JuiceTest {
         driver.get(baseUrl + "/#/login");
 
         // TODO Dismiss popup (click close)
-        driver.findElement(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")).click();
+        //driver.findElement(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")).click();
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains (@aria-label, 'Close Welcome Banner')]")))
+                .click();
 
         // Login with credentials
         WebElement emailField = driver.findElement(By.name("email"));
