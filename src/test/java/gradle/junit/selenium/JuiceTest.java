@@ -107,8 +107,8 @@ class JuiceTest {
 //        // TODO Assert that the review has been created successfully
 //
 //    }
-
-    // TODO Task3: Login and post a product review using the Juice Shop API
+//
+//    // TODO Task3: Login and post a product review using the Juice Shop API
     @Test
     void loginAndPostProductReviewViaApi() {
         // Example HTTP request with assertions using Rest Assured. Can be removed.
