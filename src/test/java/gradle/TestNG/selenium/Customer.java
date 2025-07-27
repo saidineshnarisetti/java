@@ -1,4 +1,4 @@
-package gradle.junit.selenium;
+package gradle.TestNG.selenium;
 
 import java.util.UUID;
 
