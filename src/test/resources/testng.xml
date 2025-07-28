@@ -2,7 +2,7 @@
 <suite name="JuiceShop Suite">
     <test name="Complete Tests">
         <classes>
-            <class name="gradle.TestNG.selenium.JuiceTest"/>
+            <class name="gradle.TestNG.selenium.JuiceTest2"/>
             <class name="gradle.TestNG.selenium.Httptrequests"/>
 <!--            <class name="gradle.TestNG.selenium.UIAutomation"/>-->
 
