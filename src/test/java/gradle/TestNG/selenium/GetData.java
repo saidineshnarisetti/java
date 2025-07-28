@@ -4,6 +4,17 @@ import io.restassured.path.json.JsonPath;
 
 public class GetData {
 
+    public static String GetReviews(String getPrdReviewResponse) {
+        JsonPath jsonPath = new JsonPath(getPrdReviewResponse);
+        int initialReviewsCount = jsonPath.getInt("data.size()");
+        StringBuilder reviews = new StringBuilder();
+        reviews.append("Total Reviews: ").append(initialReviewsCount).append("\n");
+        for (int i = 0; i < initialReviewsCount; i++) {
+            reviews.append("Review ID: Chiled ").append(jsonPath.getString("data[" + i + "]._id")).append("\n");
+            reviews.append("Review Text:Chiled ").append(jsonPath.getString("data[" + i + "].message")).append("\n");
+        }
+        return reviews.toString();
+    }
     public static String GetReviewDetails(String getPrdReviewResponse) {
         JsonPath jsonPath = new JsonPath(getPrdReviewResponse);
         int intailreviewscount = jsonPath.getInt("data.size()");

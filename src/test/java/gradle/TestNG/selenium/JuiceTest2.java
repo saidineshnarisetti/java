@@ -183,11 +183,12 @@ public class JuiceTest2 {
                 .statusCode(200)
                 .extract().asString();
         JsonPath GetPrdRes = new JsonPath(GetPrdreviewRes);
+        System.out.println(GetData.GetReviews(GetPrdreviewRes));
         System.out.println("Product Comments: " + GetPrdRes.get("data.message"));
 
         GetPrdRes.getList("data.message").forEach(review -> {
             System.out.println("Reviews: " + review);
-            if (review.toString().contains(TestReview)) {
+            if (review.equals(TestReview)) {
                 Assert.assertTrue(review.toString().contains(TestReview));
                 System.out.println("Review found: " + review.toString());
             }
